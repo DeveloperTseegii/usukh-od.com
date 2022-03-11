@@ -1,5 +1,15 @@
+import {useState, useEffect} from 'react'
 
 function Menu() {
+    const [navMenu, setNavMenu] = useState(false)
+    const changeNavBg =() =>{
+        if(window.scrollY >= 80){
+            setNavMenu(true);
+        }else{
+            setNavMenu(false);
+        }
+    };
+    window.addEventListener('scroll', changeNavBg);
   return (
   <div className="Menu">
     <nav className="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="nav_top">
@@ -12,18 +22,16 @@ function Menu() {
                       <a className="navbar-sm-brand text-light text-decoration-none" href="#">85026802</a>
                   </div>
                   <div>
-                      <a className="text-light" href="#" target="_blank" rel="sponsored"><i className="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
+                      <a className="text-light" href="https://www.facebook.com/usukhodtabletennis.club" target="_blank" rel="sponsored"><i className="fab fa-facebook-f fa-sm fa-fw me-2"></i></a>
                       <a className="text-light" href="#" target="_blank"><i className="fab fa-instagram fa-sm fa-fw me-2"></i></a>
-                      <a className="text-light" href="#" target="_blank"><i className="fab fa-twitter fa-sm fa-fw me-2"></i></a>
-                      <a className="text-light" href="#" target="_blank"><i className="fab fa-linkedin fa-sm fa-fw"></i></a>
                   </div>
               </div>
           </div>
         </nav>
-       
-        <nav className="navbar navbar-expand-lg navbar-light shadow">
+
+        <nav className={navMenu ? 'navbar navbar-expand-lg shadow fixed-top bg-yellow': 'navbar navbar-expand-lg'}>
           <div className="container d-flex justify-content-between align-items-center">
-              <a className="navbar-brand text-primary logo h1 align-self-center" href="#">
+              <a className="navbar-brand text-primary logo h1 align-self-center" href="/">
                   Usukh-od
               </a>
               <button className="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,13 +41,16 @@ function Menu() {
                   <div className="flex-fill">
                       <ul className="nav navbar-nav d-flex justify-content-between mx-lg-auto">
                           <li className="nav-item">
-                              <a className="nav-link" href="#">Home</a>
-                          </li>
-                          <li className="nav-item">
                               <a className="nav-link" href="#">Бидний тухай</a>
                           </li>
                           <li className="nav-item">
                               <a className="nav-link" href="#">Холбоо барих</a>
+                          </li>
+                          <li className="nav-item">
+                              <a className="nav-link" href="#">Блог</a>
+                          </li>
+                          <li className="nav-item">
+                              <a className="nav-link" href="#">Тэмцээн</a>
                           </li>
                           <li className="nav-item">
                               <a className="nav-link" href="#">Shop</a>
@@ -63,8 +74,7 @@ function Menu() {
                           <span className="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
                       </a>
                       <a className="nav-icon position-relative text-decoration-none" href="#">
-                          {/* <i className="fa fa-fw fa-user text-primary mr-3"></i> */}
-                          <p className="text-center"><a href="#" className="btn btn-success">Нэвтрэх</a></p>
+                          <button className="text-center px-3 text-dark">Нэвтрэх</button>
                       </a>
                   </div>
               </div>

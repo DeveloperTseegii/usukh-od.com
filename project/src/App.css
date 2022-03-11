@@ -19,6 +19,16 @@ body, ul, li, p, a, label, input, div {
     font-family: 'Roboto', sans-serif;
     font-size: 22px !important;
   }
+  .menu{
+    background-color: rgba(0, 0, 0, 0.541) !important;
+  }
+  /* button */
+  button{
+    background-color:#0063f8;
+    border:none;
+    border-radius: 10px !important;
+    padding: 10px;
+  }
   /* General */
   .logo { font-weight: 500 !important;}
   .text-warning {  color: #ede861 !important;}
@@ -29,6 +39,8 @@ body, ul, li, p, a, label, input, div {
   .bg-light { background-color: #e9eef5 !important;}
   .bg-black { background-color: #1d242d !important;}
   .bg-primary { background-color: #0063f8 !important;}
+  .bg-shadow {background-color: rgba(0, 0, 0, 0.479) !important;}
+  .bg-yellow{background-color: rgba(255, 255, 0, 0.288) !important;}
   .btn-success {
     background-color: #0063f8 !important;
     border-color: #0063f8 !important;

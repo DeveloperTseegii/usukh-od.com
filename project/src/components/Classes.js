@@ -25,7 +25,7 @@ export default function Classes(){
             </div>
             <div className="col-12 col-md-4 p-5 mt-3">
                 <a href="#"><img src="" className="rounded-circle img-fluid border" /></a>
-                <h2 className="h5 text-center mt-3 mb-3">Хүүхнд том хүн хосолсон</h2>
+                <h2 className="h5 text-center mt-3 mb-3">Хүүхэд том хүн хосолсон</h2>
                 <p className="text-center"><a className="btn btn-success">Бүртгүүлэх</a></p>
             </div>
         </div>
