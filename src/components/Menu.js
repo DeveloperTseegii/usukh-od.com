@@ -17,7 +17,7 @@ function Menu() {
               <div className="w-100 d-flex justify-content-between">
                   <div>
                       <i className="fa fa-envelope mx-2"></i>
-                      <a className="navbar-sm-brand text-light text-decoration-none" href="#">usuhk-od@gmail.com</a>
+                      <a className="navbar-sm-brand text-light text-decoration-none" href="#">usukhod2022@gmail.com</a>
                       <i className="fa fa-phone mx-2"></i>
                       <a className="navbar-sm-brand text-light text-decoration-none" href="#">85026802</a>
                   </div>
@@ -71,7 +71,7 @@ function Menu() {
                       </a>
                       <a className="nav-icon position-relative text-decoration-none" href="#">
                           <i className="fa fa-fw fa-cart-arrow-down text-primary mr-1"></i>
-                          <span className="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
+                          <span className="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
                       </a>
                       <a className="nav-icon position-relative text-decoration-none" href="#">
                           <button className="text-center px-3 text-dark">Нэвтрэх</button>
