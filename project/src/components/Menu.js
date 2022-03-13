@@ -1,4 +1,6 @@
 import {useState, useEffect} from 'react'
+import {NavLink} from "react-router-dom"
+
 
 function Menu() {
     const [navMenu, setNavMenu] = useState(false)
@@ -73,9 +75,9 @@ function Menu() {
                           <i className="fa fa-fw fa-cart-arrow-down text-primary mr-1"></i>
                           <span className="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark">7</span>
                       </a>
-                      <a className="nav-icon position-relative text-decoration-none" href="#">
+                      <NavLink to="/login">
                           <button className="text-center px-3 text-dark">Нэвтрэх</button>
-                      </a>
+                      </NavLink>
                   </div>
               </div>
           </div>
